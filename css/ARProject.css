@@ -1,0 +1,376 @@
+.project-content {
+    margin: 0 25% 20% 5%;
+    line-height: 25px;
+}
+
+
+section {
+    padding: 100px 20px;
+    margin-left: 100px;
+    flex: 1;
+}
+
+.title {
+    background: none;
+    color: #12300c;
+}
+
+.sub-title {
+    color: #12300c;
+    background: none;
+}
+
+h1 {
+    text-align: center;
+    color: #12300c;
+    background-color: #9AC28B;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    white-space: nowrap;
+    background: none;
+}
+
+b {
+    color: #495f41;
+    background-color: #b7dbaa;
+    padding: 0.28%;
+    border-radius: 3px;
+}
+
+ul, li, p {
+    font-size: 14px;
+    background: none;
+}
+
+a{
+    text-decoration: none;
+    border: 0;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    background: #9AC28B;
+    color: white;
+    font-size: 30px;
+}
+
+.header-img {
+    background: none;
+    margin-left: 15%;
+}
+
+.header-text {
+    background: none;
+    margin-right: 15%;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.projectthumbnail {
+    width: 107.5%;
+    height: auto;
+    flex: 1;
+}
+
+.title {
+    padding-top: 3em;
+}
+
+.tags {
+    display: flexbox;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #fffefe;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Overview */
+.overview-img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.project-overview-info-wrapper {
+    display: grid;
+    margin-top: -3%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    background-color: #9AC28B;
+    padding: 5%;
+    color: white;
+    border-radius: 0 0 25px 25px;
+}
+
+.project-overview-info-title {
+    grid-row: 1;
+    font-size: 18px;
+    background-color: #66805c;
+    border-radius: 15px;
+    padding: 7%;
+    text-align: center;
+    
+}
+
+.project-overview-info {
+    font-size: 15px;
+    gap: 30px;
+    justify-content: center;
+    margin-top: -10%;
+    background: none;
+    text-align: center;
+}
+
+.project-overview-details {
+    background: none;
+    text-align: left;
+    color: #12300c;
+}
+
+.thestory-header {
+    margin-top: 20%;
+}
+
+.thestory-container {
+    display: flex;
+}
+
+.thestoryIMG-container {
+    flex: 6;
+}
+
+.thestory-para {
+    flex: 3;
+    margin-left: -40%;
+    margin-top: 11%;
+}
+
+.insta-caption {
+    /* grid-column: 1 / 2;
+    grid-row: 2 / 3; */
+    font-size: 10px;
+    color: #818181;
+    text-align: left;
+}
+
+.caption {
+    /* grid-column: 1 / 2;
+    grid-row: 2 / 3; */
+    font-size: 10px;
+    color: #818181;
+    text-align: center;
+}
+
+.thestory-img-style {
+    width: 50%;
+    height: auto;
+}
+
+/* Problem Section */
+
+.problemstatement-box {
+    background-color: #9AC28B;
+    border: solid 5px #87a87b;
+    border-radius: 15px;
+    padding: 3%;
+    color: #12300c;
+    width:75%;
+    margin-left: 10%;
+}
+
+.problemstatement-box p{
+    background: none;
+    color: #12300c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.problemstatement-box ul, li{
+    background: none;
+}
+
+.possible-challenges {
+    margin-top: 15%;
+}
+
+.project-section-title {
+    font-size: 35px;
+}
+
+/* Solution (Research) */
+.research-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-top: 5%;
+}
+
+.research-methods-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.research-methods-items h3 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.research-methods-items p {
+    margin-top: 0;
+}
+
+.user-survey-n-count {
+    text-align: center;
+    margin-top: -50%;
+    color: #929292;
+    font-size: 15px;
+}
+
+.survey-findings-wrapper {
+    margin: 10% 0 10% 0;
+}
+
+.survey-findings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.emoji-and-title {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.respondent-quote {
+    background-color: #9AC28B;
+    border: solid 5px #87a87b;
+    color: #12300c;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.respondent-quote h3 {
+    background: none;
+    color: #333;
+}
+
+.redirection-section {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.impact-section {
+    margin-top: 5%;
+}
+
+.next-steps-section {
+    margin-top: 5%;
+}
+
+.sketch-margin {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.side-navbar {
+    position: fixed;
+    top: 50%;
+    right: -500px;
+    width: 100px;
+    transform: translateY(-50%);
+    padding: 25px;
+    border-radius: 20px 0 0 20px;
+    z-index: 1000;
+    transition: right 0.5s ease-in-out;
+}
+
+.side-navbar.visible {
+    right: 0;
+    margin-right: 10%;
+}
+
+.side-navlinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav-item {
+    margin: 12% 0 0 -25%;
+}
+
+.side-nav-item a {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+    border-left: 5px solid rgb(184, 194, 179);
+    transition: all ease-out 0.3s;
+    background: none;
+}
+
+.side-nav-item a.active {
+    background-color: #2c7931;
+    border-left: 15px solid #519261;
+    color: rgb(209, 245, 179);
+}
+
+.side-nav-item a:hover {
+    background-color: #64b879;
+    border-left: 15px solid #519261;
+    color: rgb(209, 245, 179);
+}
+
+.sketch-img-resize {
+    width: 90%;
+    height: auto;
+    margin-left: 2%;
+    padding: 5%;
+}
+
+.sketch-img-resize-2 {
+    width: 50%;
+    height: auto;
+    margin-left: 20%;
+    padding: 5%;
+}
+
+.video-resize {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Zoom Styling */
+

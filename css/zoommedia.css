@@ -1,0 +1,31 @@
+/* Media Zoom Styling */
+#fancybox-zoom {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the background */
+}
+
+#fancybox-bg {
+    opacity: 0.95; /* Make the background slightly transparent */
+}
+
+.fancybox-slide {
+    padding: 20px; /* Add padding around the slide content */
+}
+
+.fancybox-image {
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add a shadow to images */
+}
+
+.fancybox-toolbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the toolbar */
+    border-radius: 5px; /* Rounded corners for the toolbar */
+}
+
+.fancybox-button {
+    color: #333; /* Darker color for toolbar icons */
+}
+
+/* Custom style for zoom button specifically */
+.fancybox-button--zoom {
+    color: #ff0000; /* Red color for the zoom button */
+}

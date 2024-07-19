@@ -1,0 +1,311 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  background: none;
+  color: rgb(65, 7, 26);
+}
+
+p {
+  background: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+
+span {
+  margin: 0 0.3rem 0 0.3rem;
+  background: none;
+}
+
+a {
+  background: none;
+}
+
+#welcome {
+  width: 100%;
+  max-height: 600px;
+  margin-bottom: 0%;
+  /* background-image: url('/images/WelcomeBG_website\ pattern.png');
+  background-size: contain;
+  background-repeat: no-repeat; */
+  /* background-color: rgb(255, 236, 239); */
+  background-image: radial-gradient(rgb(255, 251, 252), rgb(255, 197, 206));
+}
+
+
+/* My name in colors */
+.myname {
+  margin-left: -2%;
+  margin-top: -2%;
+  width: 80%;
+  height: auto;
+}
+
+.title, .intro-paragraph1, .intro-paragraph2, .intro-paragraph3 {
+  background: none;
+}
+
+.text-and-profilepic-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 6%;
+  background: none;
+}
+
+.portfoliopfp-wrapper {
+  width: 50%; /* Let the grid system handle the width */
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 25%;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+}
+
+
+.project-wrapper {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+}
+
+.portfoliopfp,
+.project-wrapper img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  transition: all .3s ease-out;
+}
+
+.portfoliopfp-wrapper:hover,
+.project-wrapper:hover {
+  box-shadow: 6px 6px rgb(255, 159, 175);
+}
+
+.portfoliopfp-wrapper::after,
+.project-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 43, 0.208);
+  opacity: 0;
+  transition: opacity .3s ease-out;
+  pointer-events: none;
+}
+
+.portfoliopfp-wrapper:hover::after,
+.project-wrapper:hover::after {
+  opacity: 0.25;
+}
+
+.portfoliopfp-wrapper:hover .portfoliopfp,
+.project-wrapper:hover img {
+  filter: blur(10px) grayscale(1) brightness(1.25);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Overlay Text Styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 240, 243, 0.532);
+  color: rgb(49, 0, 11);
+  /* font-weight: bold; */
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10%;
+}
+
+.portfoliopfp-wrapper:hover .overlay,
+.project-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Adjust the gap as per your requirement */
+  justify-content: space-evenly;
+}
+
+
+.intro-paragraph1 .intro-paragraph2 {
+  flex: 1 1 auto;
+  opacity: 0;
+}
+
+.all-text {
+  margin-right:25%;
+  /* padding-right: -75%; */
+  background: none;
+  left: -50%;
+}
+
+.emphasis-text a {
+  font-weight: 1000;
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+  background: none;
+  transition: all .2s ease-out;
+}
+
+.emphasis-text a:hover {
+  color: rgb(235, 195, 200);
+  text-shadow: 1.5px 1.5px rgb(143, 23, 45);
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2em;
+  /* text-transform: uppercase; */
+}
+
+.letter {
+  display: inline-block;
+  line-height: 0.5em;
+  margin-right: -0.5%;
+  margin-left: -0.5%;
+}
+
+.title3 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.arrow-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 8%;
+  width: 10%;
+  background: none;
+  transition: all .2s ease-out;
+}
+
+.arrow-down:hover {
+  transform: translateY(10px);
+  background: none;
+}
+
+
+.view-projects {
+  text-align: center;
+  color: rgb(151, 12, 58);
+  font-size: 15px;
+  background: none;
+  font-weight: bold;
+}
+
+#Scroll_Arrow {
+  width: 20px;
+  height: auto;
+  padding-left: 40%;
+  background: none;
+}
+
+#projects {
+  margin: 0 15% 0 15%;
+}
+
+/* View All Projects Button */
+.view-more {
+  margin-top: 5%;
+}
+
+.want-to-view-more {
+  display: grid;
+  place-items: center;
+}
+
+.view-all-work-button-wrapper {
+  display: grid;
+  place-items: center;
+  margin-top: 1%;
+  padding: 0 45% 0 45%;
+}
+
+.view-all-work-button {
+  display: inline-block;
+  text-decoration: none;
+  width: 60%;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fffefe;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(238, 207, 217);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  transition: all .3s ease-out;
+}
+
+.view-all-work-button-wrapper .view-all-work-button:hover {
+  cursor: pointer;
+  color: rgb(151, 12, 58);
+  background-color: rgb(252, 237, 240);
+  border: 2px solid rgb(231, 78, 104);
+}
+
+.view-all-work-button-wrapper .view-all-work-button.btn-clicked {
+  background-color: rgb(252, 237, 240);
+  color: rgb(151, 12, 58);
+  border: 2px solid rgb(231, 116, 152);
+}
+
+.footer-style {
+  margin-bottom: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: rgb(255, 216, 220);
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.footer-style p{
+  color: rgb(151, 12, 58);
+  background: none;
+  font-size: 12px;
+}
+
+.socialmedia-handle-logos {
+  width: 3%;
+  padding-right: 1%;
+}
+
+.socialmedia-handle-logos2 {
+  width: 3.7%;
+  padding-right: 1%;
+}
+
+.credit {
+  margin-top: 3%;
+} 

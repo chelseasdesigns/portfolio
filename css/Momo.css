@@ -1,0 +1,381 @@
+.project-content {
+    margin: 0 25% 20% 5%;
+    line-height: 25px;
+}
+
+
+section {
+    padding: 100px 20px;
+    margin-left: 100px;
+    flex: 1;
+}
+
+.title {
+    background: none;
+    color: white;
+}
+
+.sub-title {
+    color: white;
+    background: none;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #007ADF;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 25px;
+    white-space: nowrap;
+    background: none;
+}
+
+li, p {
+    font-size: 14px;
+    background: none;
+}
+
+a{
+    text-decoration: none;
+    border: 0;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+b {
+    color: #0d62a8;
+    background-color: #add3f3;
+    padding: 0.28%;
+    border-radius: 3px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    background: #007ADF;
+    color: white;
+    font-size: 30px;
+}
+
+.header-img {
+    background: none;
+    margin-left: 15%;
+}
+
+.header-text {
+    background: none;
+    margin-right: 15%;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.projectthumbnail {
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.title {
+    padding-top: 3em;
+}
+
+/* Overview */
+
+.project-overview-info-wrapper {
+    display: grid;
+    margin-top: -3%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    background-color: #007ADF;
+    padding: 5%;
+    color: white;
+    border-radius: 0 0 25px 25px;
+}
+
+.project-overview-info-title {
+    grid-row: 1;
+    font-size: 18px;
+    background-color: #005eaa;
+    border-radius: 15px;
+    padding: 7%;
+    text-align: center;
+
+}
+
+.project-overview-info {
+    font-size: 15px;
+    gap: 30px;
+    justify-content: center;
+    margin-top: -10%;
+    background: none;
+    text-align: center;
+}
+
+.project-overview-details {
+    background: none;
+    text-align: left;
+}
+
+
+.overview-img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* Story */
+.the-story {
+    margin-top: -5%;
+}
+
+.thestory-header {
+    margin-top: 20%;
+    font-size: 25px;
+}
+
+.thestory-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.thestoryIMG-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thestoryIMG-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.caption {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: 10px;
+    color: #818181;
+    text-align: center;
+}
+
+.thestory-para {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: start;
+    margin-left: 80px;
+    margin-top: 25%;
+}
+
+
+/* Problem Section */
+#problem {
+    margin-top: -20%;
+}
+
+.problem-statement-wrapper {
+    margin-top: 3%;
+}
+
+.problemstatement-box {
+    background-color: #007ADF;
+    border: solid 5px #0169be;
+    border-radius: 15px;
+    padding: 3%;
+    color: white;
+    width: 45%;
+    margin-left: 25%;
+}
+
+.problemstatement-box p{
+    background: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.problemstatement-box ul, li{
+    background: none;
+}
+
+.possible-challenges {
+    margin-top: 15%;
+}
+
+.possible-challenges-wrapper {
+    margin-top: -8%;
+}
+
+.project-section-title {
+    font-size: 40px;
+}
+
+.side-navbar {
+    position: fixed;
+    top: 50%;
+    right: -500px;
+    width: 100px;
+    transform: translateY(-50%);
+    padding: 25px;
+    border-radius: 20px 0 0 20px;
+    z-index: 1000;
+    transition: right 0.5s ease-in-out;
+}
+
+.side-navbar.visible {
+    right: 0;
+    margin-right: 10%;
+}
+
+.side-navlinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav-item {
+    margin: 12% 0 0 -25%;
+}
+
+.side-nav-item a {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+    border-left: 5px solid rgb(179, 186, 194);
+    transition: all ease-out 0.3s;
+    background: none;
+}
+
+.side-nav-item a.active {
+    background-color: #007ADF;
+    border-left: 15px solid #7cb7e7;
+    color: rgb(255, 255, 255);
+}
+
+.side-nav-item a:hover {
+    background-color: #7cb7e7;
+    border-left: 15px solid #4799db;
+    color: #00345f;
+}
+
+.sketch-img-resize {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.video-resize {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Solution */
+#solution {
+    margin-top: 5%;
+}
+
+.understanding-client-needs-section {
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.setting-up-workspace-section {
+    margin-top: 10%;
+}
+
+.review-section {
+    margin-top: 10%;
+}
+
+.review-annotations {
+    margin-top: 13%;
+}
+
+.tldr-section {
+    margin: 5%;
+    background-color: #007ADF;
+    padding: 5%;
+    color: white;
+    border-radius: 10px;
+}
+
+.tldr-section p {
+    color: white;
+}
+
+.tldr-section h3 {
+    font-size: 25px;
+}
+
+.tldr-section h3, p, ul, li {
+    background: none;
+}
+
+.ideas-section {
+    margin-top: 15%;
+}
+
+.ideas-loading {
+    margin-bottom: 10%;
+}
+
+.pdf {
+    margin-left: 25%;
+}
+
+.birth-of-reactions {
+    margin-top: 10%;
+}
+
+.figma-section {
+    margin-top: 15%;
+}
+
+.figma-section-1 {
+    margin-bottom: 15%;
+}
+
+.figma-section-2 {
+    margin-bottom: 15%;
+}
+
+.final-prototype-section {
+    margin-top: 15%;
+}
+
+.timeline-resize {
+    width: 85%;
+    height: auto;
+    padding: 5%;
+}
+
+/* Aligning the screenshots */
+.UI-annotations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+/* Media Zoom Styling */
+
